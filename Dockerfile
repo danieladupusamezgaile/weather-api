@@ -11,7 +11,8 @@ RUN pip install --no-chache-dir \
     python-dotenv==1.0.1 \
     passlib[bcrypt]==1.7.4 \
     python-jose==3.3.0 \
-    httpx==0.27.0
+    httpx==0.27.0 \
+    pydantic==2.7.1
 
 COPY ./app ./app
 
