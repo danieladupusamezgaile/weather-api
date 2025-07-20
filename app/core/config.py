@@ -1,11 +1,11 @@
-from pydantic import BaseSettings
+from pydantic_settings import BaseSettings
 from functools import lru_cache
 
 class Settings(BaseSettings):
-    DB_USER_NAME: str
-    DB_PASSWORD: str
-    DB_NAME: str
-    DB_URL: str
+    POSTGRES_USER: str
+    POSTGRES_PASSWORD: str
+    POSTGRES_DB: str
+    DATABASE_URL: str
     
     SECRET_KEY: str
     ALGORITHM: str
